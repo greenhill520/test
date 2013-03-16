@@ -5,15 +5,13 @@
 </head>
 <body>
 <header>
-    <header>
-        <h1>网页标题</h1>
-        <nav>
-            <ul>
-                <li><a href="#">首页</a></li>
-                <li><a href="#">帮助</a></li>
-            </ul>
-        </nav>
-    </header>
+    <h1>网页标题</h1>
+    <nav>
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">帮助</a></li>
+        </ul>
+    </nav>
 </header>
 <article>
     <h1>第四节 词法闭包</h1>
@@ -30,42 +28,59 @@
         </dl>
     </aside>
 </article>
+<article>
+    <hgroup>
+        <h1>文章主标题</h1>
+        <h2>文章子标题</h2>
+    </hgroup>
+    <p>文章正文</p>
+    <section class="comments">
+        <article>
+            <h1>评论标题</h1>
+            <p>评论正文</p>
+        </article>
+    </section>
+</article>
+<article>
+    <h1>测试部分</h1>
+    <section>
+        <h3>测试list</h3>
+        <form name="form1">
+            <label>
+            text:<input type="text" name="greeting" list="greetings">
+            </label>
+            <datalist id="greetings" style="display: none;">
+                <option value="Good Morning">Good Morning</option>
+                <option value="Hello">Hello</option>
+                <option value="Good Afternoon">Good Afternoon</option>
+            </datalist>
+            <input type="submit">
+        </form>
+    </section>
+    <section>
+        <h3>测试input</h3>
+        <form name="form2">
+            <label>
+                请选择日期：<input name="date1" type="date" value="2013-03-16"><br/>
+                请选择时间：<input name="time1" type="time" value="15:16">
+            </label>
+            <input type="submit">
+        </form>
+    </section>
+    <section>
+        <h3>简单表单示例</h3>
+        <form name="form3">
+            <label>姓名<input name="username" id="username" type="text" required></label><br/>
+            <label>年龄<input name="age" id="age" type="number" min="0" max="100"></label><br/>
+            <label>出生日期<input name="birthday" id="birthday" type="date"></label><br/>
+            <label>Email<input name="email" id="email" type="email" required></label><br/>
+            <label>个人主页<input name="url" id="url" type="url"></label><br/>
+            <label>个人主页<textarea name="memo" id="memo"></textarea></label><br/>
+            <input type="submit">
+        </form>
+    </section>
+</article>
 <footer>
     <small>版权所有：魏新亮</small>
 </footer>
 </body>
-
-<!--
-<!DOCTYPE html>
-<head>
-	<title>网页编排示例</title>
-    <meta charset="UTF-8" />
-</head>
-<body>
-	<header>
-    	<h1>网页标题</h1>
-        <nav>
-        	<ul>
-            	<li><a href="#">首页</a></li>
-                <li><a href="#">帮助</a></li>
-            </ul>
-        </nav>
-    </header>
-    <article>
-    	<hgroup>
-        	<h1>文章主标题</h1>
-            <h2>文章子标题</h2>
-        </hgroup>
-        <p>文章正文</p>
-        <section calss="comments">
-        	<article>
-            	<h1>评论标题</h1>
-                <p>评论正文</p>
-            </article>
-        </section>
-    </article>
-    <footer>
-    	<small>版权所有：魏新亮</small>
-     </footer>
-</body>
--->
