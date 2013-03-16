@@ -49,28 +49,36 @@
         <h3>测试list</h3>
         <form name="form1">
             <label>
-            text:<input type="text" name="greeting" list="greetings" pattern="[1-9][A-Z]{2}" placeholder="输入内容：一个数字和两个大写字母！">
+            输入测试：<input type="text" name="greeting" list="greetings" pattern="[1-9][A-Z]{2}" placeholder="输入内容：一个数字和两个大写字母！"/>
             </label>
             <datalist id="greetings" style="display: none;">
                 <option value="Good Morning">Good Morning</option>
                 <option value="Hello">Hello</option>
                 <option value="Good Afternoon">Good Afternoon</option>
             </datalist>
-            <input type="submit">
+            <input type="submit"/>
         </form>
     </section>
     <section>
         <h3>简单表单示例</h3>
-        <form name="form3" onsubmit="return checkEmail();">
-            <label>姓名<input name="username" id="username" type="text" required></label><br/>
-            <label>年龄<input name="age" id="age" type="number" min="0" max="100"></label><br/>
-            <label>出生日期<input name="birthday" id="birthday" type="date"></label><br/>
-            <label>Email<input name="email" id="email" type="email"></label><br/>
+        <form name="form2" onsubmit="return checkEmail();">
+            <label>姓名<input name="username" id="username" type="text" required/></label><br/>
+            <label>年龄<input name="age" id="age" type="number" min="0" max="100"/></label><br/>
+            <label>出生日期<input name="birthday" id="birthday" type="date"/></label><br/>
+            <label>Email<input name="email" id="email" type="email"/></label><br/>
            <!-- TODO: 如果一定要填写Email的话，可以在input 里面添加required来要求，或者是用js
            <label>Email<input name="email" id="email" type="email" required></label><br/> -->
             <label>个人主页<input name="url" id="url" type="url"></label><br/>
             <label>个人主页<textarea name="memo" id="memo"></textarea></label><br/>
-            <input type="submit">
+            <input type="submit"/>
+        </form>
+    </section>
+    <section>
+        <h3>自定义错误信息示例</h3>
+        <form name="form3" onsubmit="return checkPass();">
+            <label>密码：<input type="password" name="pass1" id="pass1" /> </label><br/>
+            <label>确认密码：<input type="password" name="pass2" id="pass2" /> </label><br/>
+            <input type="submit"/>
         </form>
     </section>
 </article>

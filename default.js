@@ -23,3 +23,22 @@ function checkEmail() {
         return true;
     }
 }
+
+/**
+ * TODO: setCustomValidity()也用不了，应该不算是普遍使用的函数吧！用alert代替了！
+ * @return {Boolean}
+ */
+function checkPass(){
+    var pass1 = document.getElementById("pass1");
+    var pass2 = document.getElementById("pass2");
+    if( pass1.value != pass2.value ) {
+        alert("两次密码输入不一致！");
+        //pass2.serCustomValidity("密码不一致！");
+        return false;
+    }
+    else {
+        alert("密码一致！");
+        //pass2.setCustomValidity("");
+        return true;
+    }
+}
