@@ -5,6 +5,9 @@
  * Time: 下午4:07
  * To create this template use File
  */
+body {
+    font-family: "微软雅黑";
+}
 input {
     transition: all 0.30s ease-in-out;
     -webkit-transition: all 0.30s ease-in-out;
@@ -12,9 +15,77 @@ input {
     border: #35a5e5 1px solid;
     border-radius: 4px;
     outline: none;
+    margin: 7px;
 }
 input:focus {
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
     -webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
     -moz-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
+header {
+    background-color: #1e90ff;
+    border: black 1px solid;
+    border-radius: 10px;
+    margin: 15px;
+    text-align: center;
+}
+
+nav {
+    background-color:#9acd32;
+    text-align: left;
+    margin: 5px 15px;
+    border-radius: 6px;
+}
+li{
+    display: inline;
+    list-style: none;
+    margin: 3px;
+    padding: 0 50px 0 50px;
+}
+li:hover {
+    background-color: #ffdead;
+    boeder: black 1px solid;
+    border-radius: 3px;
+}
+li a {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+article {
+    margin: 15px;
+    background-color: #db7093;
+    border: purple 1.5px solid;
+    border-radius: 5px;
+}
+section {
+    background-color: #32cd32;
+    border: purple 1px solid;
+    border-radius: 4px;
+}
+
+.comments {
+    background-color: #8a2be2;
+    border: purple 1px solid;
+    border-radius: 4px;
+}
+label {
+    padding: 0 30px;
+}
+h1,
+h2,
+h3 {
+    padding: 0 10px;
+}
+p {
+    padding: 0 15px;
+}
+footer {
+    background-color: #ffb6c1;
+    border-radius: 5px;
+    font-style: italic;
+    margin: 15px;
+    padding: 5px;
+    text-align: center;
 }
