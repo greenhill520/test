@@ -18,8 +18,8 @@ input {
     margin: 7px;
 }
 input:focus {
-    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-    -webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    box-shadow: 0 0 5px rgba(238, 10, 10, 1);
+    -webkit-box-shadow: 0 0 5px rgba(238, 10, 10, 1);
     -moz-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
 }
 

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <head>
-    <title>aside元素示例</title>
+    <title>Learning HTML5, CSS3 and JavaScript</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="default.css">
 </head>
 <body>
 <header>
-    <h1>网页标题</h1>
+    <h1>Learning HTML5, CSS3 and JavaScript</h1>
     <nav>
         <ul>
             <li><a href="#">首页</a></li>
@@ -79,6 +79,32 @@
             <label>确认密码：<input type="password" name="pass2" id="pass2" /> </label><br/>
             <input type="submit"/>
         </form>
+    </section>
+    <section>
+        <h3>测试文件API</h3>
+        <input type="file" id="file" multiple size="80"/>
+        <input type="button" onclick="ShowFileName();" value="显示多文件名"/>
+        <input type="button" onclick="ShowFileType();" value="显示文件类型"/>
+        <input type="button" onclick="FileUpload();" value="文件上传"/><br/>
+        文件字节长度：<span id="size"></span><br/>
+        文件类型：<span id="type"></span>
+    </section>
+    <section>
+        <h3>FileReader接口示例</h3>
+        <label>请选择一个文件：</label>
+        <input type="file" id="file2"/>
+        <input type="button" onclick="readAsDataURL();" value="读取图像"/>
+        <input type="button" onclick="readAsBinaryString();" value="读取二进制数据"/>
+        <input type="button" onclick="readAsText();" value="读取文本文件"/><br/>
+        <div id="result"></div>
+    </section>
+    <section>
+        <h3>测试简单的Web留言板-用Web Storage</h3>
+        <label><textarea id="memo2" cols="60" rows="10"></textarea></label><br/>
+        <input type="button" onclick="saveStorage('memo2');" value="追加"/>
+        <input type="button" onclick="clearStorage('msg');" value="初始化"/>
+        <hr>
+        <p id="msg"></p>
     </section>
 </article>
 <footer>
