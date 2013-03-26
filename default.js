@@ -220,7 +220,7 @@ function init() {
 // 2013-03-26 xl
 //增加测试时候有不合法的词语出现
 function CheckWrong() {
-    var arr = readFile("test.txt");
+    var arr = ["苍井空", "fuck", "十八大", "你妹的", "日你"];
     var tf = 0;
     var storeW = "";
     var str = document.getElementById("checkwrong").value;
@@ -237,15 +237,4 @@ function CheckWrong() {
     else {
         alert("恭喜，你输入的内容没有不和谐的内容！");
     }
-}
-function readFile(filename){
-    var fso = new ActiveXObject("Scripting.FileSystemObject");
-    var f = fso.OpenTextFile(filename,1);
-    var s = "";
-    var dataArray = Array();
-    while (!f.AtEndOfStream)
-        s = f.ReadLine();
-        dataArray.push(s);
-    f.Close();
-    return dataArray;
 }
