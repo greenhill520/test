@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="default.css">
 </head>
-<body>
+<body onload="init();">
 <header>
     <h1>Learning HTML5, CSS3 and JavaScript</h1>
     <nav>
@@ -106,9 +106,19 @@
         <hr>
         <p id="msg"></p>
     </section>
+    <section>
+        <h3>获取当前位置的地理信息</h3>
+        <div id="map" style="width: 400px; height: 400px"></div>
+    </section>
+    <section>
+        <h3>测试文本框内是否有不合法的词</h3>
+        <label>请输入内容：<textarea name="checkwrong" id="checkwrong" cols="60" rows="10"></textarea></label>
+        <input type="button" onclick="CheckWrong();" value="点击检测"/>
+    </section>
 </article>
 <footer>
     <small>2013-2014@版权所有：魏新亮</small>
 </footer>
 <script src="default.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 </body>
