@@ -9,7 +9,114 @@
 </head>
 <body>
 <div class="pure-g-r content" id="layout">
-    <!-- 正文列表显示 -->
+    <!--<div id="navigation">-->
+    <!--<div class="pure-u" id="nav">-->
+        <!--<a href="#nav" class="nav-menu-button">菜单</a>-->
+        <!--<img src="images/AiReadLogo.png">-->
+        <!--<div class="nav-inner">-->
+            <!--<div class="pure-menu pure-menu-open">-->
+                <!--<ul>-->
+                    <!--<li><a href="javascript:" onclick="openStaticPopup(1)">源列表</a></li>-->
+                    <!--<li><a href="javascript:" onclick="openStaticPopup(2)">源管理</a></li>-->
+                    <!--<li class="pure-menu-heading">Setting</li>-->
+                    <!--<li><a href="javascript:" onclick="openStaticPopup(3)"><span class="email-label-personal"></span>添加</a></li>-->
+                    <!--<li><a href="javascript:" onclick="openStaticPopup(4)"><span class="email-label-work"></span>设置</a></li>-->
+                    <!--<li><a href="#"><span class="email-label-travel"></span>退出</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <div id="myHiddenDiv">
+        <form name="get" action="#" method="post" >
+            <div class="popup">
+                <div class="popup-header">
+                    <h2>源列表<em>（请选择你订阅的源）</em></h2>
+                    <hr>
+                </div>
+                <div class="popup-body">
+                    <ul>
+                        <li><input type="radio" name="radio" checked="checked"/>网易新闻</li>
+                        <li><input type="radio" name="radio" />百度新闻</li>
+                        <li><input type="radio" name="radio" />雅虎新闻</li>
+                        <li><input type="radio" name="radio" />新浪新闻</li>
+                        <li><input type="radio" name="radio" />腾讯新闻</li>
+                        <li><input type="radio" name="radio" />Google</li>
+                        <li><input type="radio" name="radio" />百度新闻</li>
+                        <li><input type="radio" name="radio" />雅虎新闻</li>
+                        <li><input type="radio" name="radio" />新浪新闻</li>
+                        <li><input type="radio" name="radio" />腾讯新闻</li>
+                        <li><input type="radio" name="radio" />Google</li>
+                        <li><input type="radio" name="radio" />百度新闻</li>
+                        <li><input type="radio" name="radio" />雅虎新闻</li>
+                        <li><input type="radio" name="radio" />新浪新闻</li>
+                        <li><input type="radio" name="radio" />腾讯新闻</li>
+                        <li><input type="radio" name="radio" />Google</li>
+                    </ul>
+                </div>
+                <div class="popup-bottom"><input type="button" class="pure-button primary-button" name="确定" value="确定"></div>
+            </div>
+        </form>
+    </div>
+
+    <div id="myHiddenDiv2">
+        <form name="get" action="#" method="post" >
+            <div class="popup">
+                <div class="popup-header">
+                    <h2>源管理<em>（请选择你要删除的源）</em></h2>
+                    <hr>
+                </div>
+                <div class="popup-body">
+                    <ul>
+                        <li><input type="checkbox" name="checkbox"/>网易新闻</li>
+                        <li><input type="checkbox" name="checkbox"/>百度新闻</li>
+                        <li><input type="checkbox" name="checkbox"/>雅虎新闻</li>
+                        <li><input type="checkbox" name="checkbox"/>新浪新闻</li>
+                        <li><input type="checkbox" name="checkbox"/>腾讯新闻</li>
+                        <li><input type="checkbox" name="checkbox"/>Google</li>
+                        <li><input type="checkbox" name="checkbox"/>百度新闻</li>
+                        <li><input type="checkbox" name="checkbox"/>雅虎新闻</li>
+                        <li><input type="checkbox" name="checkbox"/>新浪新闻</li>
+                        <li><input type="checkbox" name="checkbox"/>腾讯新闻</li>
+                        <li><input type="checkbox" name="checkbox"/>Google</li>
+                        <li><input type="checkbox" name="checkbox"/>百度新闻</li>
+                        <li><input type="checkbox" name="checkbox"/>雅虎新闻</li>
+                        <li><input type="checkbox" name="checkbox"/>新浪新闻</li>
+                        <li><input type="checkbox" name="checkbox"/>腾讯新闻</li>
+                        <li><input type="checkbox" name="checkbox"/>Google</li>
+                    </ul>
+                </div>
+                <div class="popup-bottom"><input type="button" class="pure-button primary-button" name="删除" value="删除"></div>
+            </div>
+        </form>
+    </div>
+
+    <div id="myHiddenDiv3">
+        <form name="get" action="#" method="post" >
+            <div class="popup">
+                <div class="popup-header">
+                    <h2>添加订阅<em>（请输入你要订阅的源地址）</em></h2>
+                    <hr>
+                </div>
+                <div class="popup-body">
+                    <p class="bookadd">订阅地址：<input type="text" name="text" value="请输入订阅地址"/></p>
+                </div>
+                <div class="popup-bottom"><input type="button" class="pure-button primary-button" name="确定" value="确定"></div>
+            </div>
+        </form>
+    </div>
+
+    <div id="myHiddenDiv4">
+        <form name="get" action="#" method="post" >
+            <div class="popup">
+                <div class="popup-header">
+                    <h2>设置<em>（设置你的喜好）</em></h2>
+                    <hr>
+                </div>
+            </div>
+        </form>
+    </div>
+
     <div class="pure-u" id="list">
         <div class="content">
             <div class="email-item email-item-selected pure-g">
@@ -97,7 +204,7 @@
             </div>
         </div>
     </div>
-    <!-- 正文内容显示 -->
+
     <div class="pure-u" id="main">
         <div class="content">
             <div class="email-content pure-g">
@@ -126,7 +233,6 @@
             </div>
         </div>
     </div>
-    <!-- 导航栏显示 -->
     <div id="navigation">
         <div class="pure-u" id="nav">
             <a href="#nav" class="nav-menu-button">菜单</a>
@@ -145,99 +251,57 @@
             </div>
         </div>
     </div>
-    <!-- 隐藏功能区显示 -->
-    <div id="myHiddenDiv">
-        <form name="get" action="#" method="post" >
-            <div class="popup">
-                <div class="popup-header">
-                    <h2>源列表<em>（请选择你订阅的源）</em></h2>
-                    <hr>
-                </div>
-                <div class="popup-body">
-                    <ul>
-                        <li><input type="radio" name="radio" checked="checked"/>网易新闻</li>
-                        <li><input type="radio" name="radio" />百度新闻</li>
-                        <li><input type="radio" name="radio" />雅虎新闻</li>
-                        <li><input type="radio" name="radio" />新浪新闻</li>
-                        <li><input type="radio" name="radio" />腾讯新闻</li>
-                        <li><input type="radio" name="radio" />Google</li>
-                        <li><input type="radio" name="radio" />百度新闻</li>
-                        <li><input type="radio" name="radio" />雅虎新闻</li>
-                        <li><input type="radio" name="radio" />新浪新闻</li>
-                        <li><input type="radio" name="radio" />腾讯新闻</li>
-                        <li><input type="radio" name="radio" />Google</li>
-                        <li><input type="radio" name="radio" />百度新闻</li>
-                        <li><input type="radio" name="radio" />雅虎新闻</li>
-                        <li><input type="radio" name="radio" />新浪新闻</li>
-                        <li><input type="radio" name="radio" />腾讯新闻</li>
-                        <li><input type="radio" name="radio" />Google</li>
-                    </ul>
-                </div>
-                <div class="popup-bottom"><input type="button" class="pure-button primary-button" name="确定" value="确定"></div>
-            </div>
-        </form>
-    </div>
-    <div id="myHiddenDiv2">
-        <form name="get" action="#" method="post" >
-            <div class="popup">
-                <div class="popup-header">
-                    <h2>源管理<em>（请选择你要删除的源）</em></h2>
-                    <hr>
-                </div>
-                <div class="popup-body">
-                    <ul>
-                        <li><input type="checkbox" name="checkbox"/>网易新闻</li>
-                        <li><input type="checkbox" name="checkbox"/>百度新闻</li>
-                        <li><input type="checkbox" name="checkbox"/>雅虎新闻</li>
-                        <li><input type="checkbox" name="checkbox"/>新浪新闻</li>
-                        <li><input type="checkbox" name="checkbox"/>腾讯新闻</li>
-                        <li><input type="checkbox" name="checkbox"/>Google</li>
-                        <li><input type="checkbox" name="checkbox"/>百度新闻</li>
-                        <li><input type="checkbox" name="checkbox"/>雅虎新闻</li>
-                        <li><input type="checkbox" name="checkbox"/>新浪新闻</li>
-                        <li><input type="checkbox" name="checkbox"/>腾讯新闻</li>
-                        <li><input type="checkbox" name="checkbox"/>Google</li>
-                        <li><input type="checkbox" name="checkbox"/>百度新闻</li>
-                        <li><input type="checkbox" name="checkbox"/>雅虎新闻</li>
-                        <li><input type="checkbox" name="checkbox"/>新浪新闻</li>
-                        <li><input type="checkbox" name="checkbox"/>腾讯新闻</li>
-                        <li><input type="checkbox" name="checkbox"/>Google</li>
-                    </ul>
-                </div>
-                <div class="popup-bottom"><input type="button" class="pure-button primary-button" name="删除" value="删除"></div>
-            </div>
-        </form>
-    </div>
-    <div id="myHiddenDiv3">
-        <form name="get" action="#" method="post" >
-            <div class="popup">
-                <div class="popup-header">
-                    <h2>添加订阅<em>（请输入你要订阅的源地址）</em></h2>
-                    <hr>
-                </div>
-                <div class="popup-body">
-                    <p class="bookadd">订阅地址：<input type="text" name="text" value="请输入订阅地址"/></p>
-                </div>
-                <div class="popup-bottom"><input type="button" class="pure-button primary-button" name="确定" value="确定"></div>
-            </div>
-        </form>
-    </div>
-    <div id="myHiddenDiv4">
-        <form name="get" action="#" method="post" >
-            <div class="popup">
-                <div class="popup-header">
-                    <h2>设置<em>（设置你的喜好）</em></h2>
-                    <hr>
-                </div>
-            </div>
-        </form>
-    </div>
 </div>
 <script src="js/ajf8ggy.js"></script>
 <script src="js/yui-min.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/modernizr.custom.34978.js"></script>
 <script src="js/jquery.jmpopups-0.5.1.js"></script>
-<script src="js/index.js"></script>
+<script>
+    $(function() {
+        $('#navigation').hover(
+                function () {
+                    $('#nav',$(this)).stop().animate({'marginLeft':'-500px'},200);
+                },
+                function () {
+                    $('#nav',$(this)).stop().animate({'marginLeft':'-640px'},200);
+                }
+        );
+    });
+    $.setupJMPopups({
+        screenLockerBackground: "#565d64",
+        screenLockerOpacity: "0.6"
+    });
+    function openStaticPopup(num) {
+        if( num == 1 ) {
+            $.openPopupLayer({
+                name: "myStaticPopup",
+                width: 820,
+                target: "myHiddenDiv"
+            });
+        }
+        else if( num == 2 ) {
+            $.openPopupLayer({
+                name: "myStaticPopup",
+                width: 820,
+                target: "myHiddenDiv2"
+            });
+        }
+        else if( num == 3 ) {
+            $.openPopupLayer({
+                name: "myStaticPopup",
+                width: 820,
+                target: "myHiddenDiv3"
+            });
+        }
+        else if( num == 4 ) {
+            $.openPopupLayer({
+                name: "myStaticPopup",
+                width: 820,
+                target: "myHiddenDiv4"
+            });
+        }
+    }
+</script>
 </body>
 </html>

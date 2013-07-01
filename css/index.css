@@ -27,8 +27,8 @@ a {
 }
 
 #list {
-    margin-left: -350px;
-    width:350px;
+    margin-left: -490px;
+    width:490px;
     border-right: 1px solid #ddd;
 }
 
@@ -36,7 +36,6 @@ a {
     width: 100%;
 }
 
-/* HELPER CLASSES */
 .primary-button,
 .secondary-button {
     -webkit-box-shadow: none;
@@ -56,7 +55,6 @@ a {
     font-size: 80%;
 }
 
-/* Vertical Navigation Styles */
 #nav .pure-menu {
     background: transparent;
     border: none;
@@ -103,8 +101,6 @@ a {
     background: #40c365;
 }
 
-
-/* Email Item Styles */
 .email-item {
     padding: 0.9em 1em;
     border-bottom: 1px solid #ddd;
@@ -117,12 +113,10 @@ a {
 .email-name, .email-subject {
     margin: 0;
 }
-
 .email-name {
     text-transform: uppercase;
     color: #999;
 }
-
 .email-desc {
     font-size: 80%;
     margin: 0.4em 0;
@@ -135,14 +129,12 @@ a {
     border-left: 6px solid #02a3c6;
 }
 
-/* Email Content Styles */
 .email-content-header, .email-content-body, .email-content-footer {
     padding: 1em 2em;
 }
 .email-content-header {
     border-bottom: 1px solid #ddd;
 }
-
 .email-content-title {
     margin: 0.5em 0 0;
 }
@@ -233,9 +225,19 @@ a {
 #myHiddenDiv2 {
     display:none;
 }
+#myHiddenDiv3 {
+    display:none;
+}
+#myHiddenDiv4 {
+    display:none;
+}
 .popup {
     background-color: #ffffff;
     border:1px solid #ccc;
+    border-radius: 7px;
+}
+.popup-header {
+
 }
 .popup-header h2 {
     font-size:20px;
@@ -249,10 +251,10 @@ a {
 }
 .popup-body ul li{
     display: inline-block;
-    width: 129px;
+    width: 125px;
     height: 20px;
     line-height: 20px;
-    margin: 6px 0 0 6px;
+    margin: 6px 0 0 23px;
     text-align: left;
     font-size: 14px;
     list-style: none;
@@ -262,4 +264,13 @@ a {
 }
 .popup-bottom {
     text-align: center;
+}
+.bookadd {
+    padding-left: 20px;
+}
+input {
+    border-radius: 3px;
+}
+.email-item:hover {
+    background: #eee;
 }
