@@ -10,23 +10,84 @@
 <body>
 <div class="pure-g-r content" id="layout">
     <div class="pure-u" id="nav">
-        <a href="#nav" class="nav-menu-button">Menu</a>
+        <a href="#nav" class="nav-menu-button">菜单</a>
+        <img src="images/AiReadLogo.png">
         <div class="nav-inner">
-            <button class="pure-button primary-button">Compose</button>
             <div class="pure-menu pure-menu-open">
                 <ul>
-                    <li><a href="#">Inbox <span class="email-count">(2)</span></a></li>
-                    <li><a href="#">Important</a></li>
-                    <li><a href="#">Sent</a></li>
-                    <li><a href="#">Drafts</a></li>
-                    <li><a href="#">Trash</a></li>
-                    <li class="pure-menu-heading">Labels</li>
-                    <li><a href="#"><span class="email-label-personal"></span>Personal</a></li>
-                    <li><a href="#"><span class="email-label-work"></span>Work</a></li>
-                    <li><a href="#"><span class="email-label-travel"></span>Travel</a></li>
+                    <li><a href="javascript:" onclick="openStaticPopup(1)">源列表</a></li>
+                    <li><a href="javascript:" onclick="openStaticPopup(2)">源管理</a></li>
+                    <li class="pure-menu-heading">Setting</li>
+                    <li><a href="#"><span class="email-label-personal"></span>添加订阅</a></li>
+                    <li><a href="#"><span class="email-label-work"></span>设置</a></li>
+                    <li><a href="#"><span class="email-label-travel"></span>退出</a></li>
                 </ul>
             </div>
         </div>
+    </div>
+
+    <div id="myHiddenDiv">
+        <form name="get" action="#" method="post" >
+            <div class="popup">
+                <div class="popup-header">
+                    <h2>源列表<em>（请选择你订阅的源）</em></h2>
+                    <hr>
+                </div>
+                <div class="popup-body">
+                    <ul class="ull">
+                        <li><input type="radio" name="radio" checked="checked"/>网易新闻</li>
+                        <li><input type="radio" name="radio" />百度新闻</li>
+                        <li><input type="radio" name="radio" />雅虎新闻</li>
+                        <li><input type="radio" name="radio" />新浪新闻</li>
+                        <li><input type="radio" name="radio" />腾讯新闻</li>
+                        <li><input type="radio" name="radio" />Google</li>
+                        <li><input type="radio" name="radio" />百度新闻</li>
+                        <li><input type="radio" name="radio" />雅虎新闻</li>
+                        <li><input type="radio" name="radio" />新浪新闻</li>
+                        <li><input type="radio" name="radio" />腾讯新闻</li>
+                        <li><input type="radio" name="radio" />Google</li>
+                        <li><input type="radio" name="radio" />百度新闻</li>
+                        <li><input type="radio" name="radio" />雅虎新闻</li>
+                        <li><input type="radio" name="radio" />新浪新闻</li>
+                        <li><input type="radio" name="radio" />腾讯新闻</li>
+                        <li><input type="radio" name="radio" />Google</li>
+                    </ul>
+                </div>
+                <div class="popup-bottom"><input type="button" class="pure-button primary-button" name="确定" value="确定"></div>
+            </div>
+        </form>
+    </div>
+
+    <div id="myHiddenDiv2">
+        <form name="get" action="#" method="post" >
+            <div class="popup">
+                <div class="popup-header">
+                    <h2>源管理<em>（请选择你要删除的源）</em></h2>
+                    <hr>
+                </div>
+                <div class="popup-body">
+                    <ul class="ull">
+                        <li><input type="checkbox" name="checkbox"/>网易新闻</li>
+                        <li><input type="checkbox" name="checkbox"/>百度新闻</li>
+                        <li><input type="checkbox" name="checkbox"/>雅虎新闻</li>
+                        <li><input type="checkbox" name="checkbox"/>新浪新闻</li>
+                        <li><input type="checkbox" name="checkbox"/>腾讯新闻</li>
+                        <li><input type="checkbox" name="checkbox"/>Google</li>
+                        <li><input type="checkbox" name="checkbox"/>百度新闻</li>
+                        <li><input type="checkbox" name="checkbox"/>雅虎新闻</li>
+                        <li><input type="checkbox" name="checkbox"/>新浪新闻</li>
+                        <li><input type="checkbox" name="checkbox"/>腾讯新闻</li>
+                        <li><input type="checkbox" name="checkbox"/>Google</li>
+                        <li><input type="checkbox" name="checkbox"/>百度新闻</li>
+                        <li><input type="checkbox" name="checkbox"/>雅虎新闻</li>
+                        <li><input type="checkbox" name="checkbox"/>新浪新闻</li>
+                        <li><input type="checkbox" name="checkbox"/>腾讯新闻</li>
+                        <li><input type="checkbox" name="checkbox"/>Google</li>
+                    </ul>
+                </div>
+                <div class="popup-bottom"><input type="button" class="pure-button primary-button" name="确定" value="确定"></div>
+            </div>
+        </form>
     </div>
 
     <div class="pure-u" id="list">
@@ -37,20 +98,18 @@
                 </div>
                 <div class="pure-u-3-4">
                     <h5 class="email-name">Tilo Mitra</h5>
-                    <h4 class="email-subject">Hello from Toronto</h4>
                     <p class="email-desc">
                         Hey, I just wanted to check in with you from Toronto. I got here earlier today.
                     </p>
                 </div>
             </div>
 
-            <div class="email-item email-item-unread pure-g">
+            <div class="email-item pure-g">
                 <div class="pure-u">
                     <img class="email-avatar" alt="Eric Ferraiuolo's avatar" src="images/ynews-avatar.png" height="64" width="64">
                 </div>
                 <div class="pure-u-3-4">
                     <h5 class="email-name">Eric Ferraiuolo</h5>
-                    <h4 class="email-subject">Re: Pull Requests</h4>
                     <p class="email-desc">
                         Hey, I had some feedback for pull request #51. We should center the menu so it looks better on mobile.
                     </p>
@@ -63,7 +122,6 @@
                 </div>
                 <div class="pure-u-3-4">
                     <h5 class="email-name">YUI Library</h5>
-                    <h4 class="email-subject">You have 5 bugs</h4>
                     <p class="email-desc">
                         Duis aute irure dolor in reprehenderit in voluptate.
                     </p>
@@ -76,7 +134,6 @@
                 </div>
                 <div class="pure-u-3-4">
                     <h5 class="email-name">Reid Burke</h5>
-                    <h4 class="email-subject">Re: Design Language</h4>
                     <p class="email-desc">
                         Excepteur sint occaecat cupidatat non proident, sunt in culpa.
                     </p>
@@ -89,7 +146,6 @@
                 </div>
                 <div class="pure-u-3-4">
                     <h5 class="email-name">Andrew Wooldridge</h5>
-                    <h4 class="email-subject">YUI Blog Updates?</h4>
                     <p class="email-desc">
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
                     </p>
@@ -102,7 +158,6 @@
                 </div>
                 <div class="pure-u-3-4">
                     <h5 class="email-name">Yahoo! Finance</h5>
-                    <h4 class="email-subject">How to protect your finances from winter storms</h4>
                     <p class="email-desc">
                         Mauris tempor mi vitae sem aliquet pharetra. Fusce in dui purus, nec malesuada mauris.
                     </p>
@@ -115,7 +170,6 @@
                 </div>
                 <div class="pure-u-3-4">
                     <h5 class="email-name">Yahoo! News</h5>
-                    <h4 class="email-subject">Summary for April 3rd, 2012</h4>
                     <p class="email-desc">
                         We found 10 news articles that you may like.
                     </p>
@@ -131,7 +185,7 @@
                     <div class="pure-u-1-2">
                         <h1 class="email-content-title">Hello from Toronto</h1>
                         <p class="email-content-subtitle">
-                            From <a>Tilo Mitra</a> at <span>3:56pm, April 3, 2012</span>
+                            来源：<a>Tilo Mitra</a>   日期：<span>2013年7月1日 13:05</span>
                         </p>
                     </div>
                 </div>
@@ -148,10 +202,6 @@
                     <p>
                         Donec sagittis dolor ut quam pharetra pretium varius in nibh. Suspendisse potenti. Donec imperdiet, velit vel adipiscing bibendum, leo eros tristique augue, eu rutrum lacus sapien vel quam. Nam orci arcu, luctus quis vestibulum ut, ullamcorper ut enim. Morbi semper erat quis orci aliquet condimentum. Nam interdum mauris sed massa dignissim rhoncus.
                     </p>
-                    <p>
-                        Regards,<br>
-                        Tilo
-                    </p>
                 </div>
             </div>
         </div>
@@ -159,5 +209,30 @@
 </div>
 <script src="js/ajf8ggy.js"></script>
 <script src="js/yui-min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/modernizr.custom.34978.js"></script>
+<script src="js/jquery.jmpopups-0.5.1.js"></script>
+<script>
+    $.setupJMPopups({
+        screenLockerBackground: "#565d64",
+        screenLockerOpacity: "0.6"
+    });
+    function openStaticPopup(num) {
+        if( num == 1 ) {
+            $.openPopupLayer({
+                name: "myStaticPopup",
+                width: 820,
+                target: "myHiddenDiv"
+            });
+        }
+        else if( num == 2 ) {
+            $.openPopupLayer({
+                name: "myStaticPopup",
+                width: 820,
+                target: "myHiddenDiv2"
+            });
+        }
+    }
+</script>
 </body>
 </html>
