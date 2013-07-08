@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AiRead &ndash; RSS</title>
+    <link rel="stylesheet" href="css/pure-min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="pure-g-r content" id="layout">
+    <!-- 导航栏显示 -->
+    <div class="pure-u" id="nav">
+        <a href="#nav" class="nav-menu-button">菜单</a>
+        <a href="index.html"><img src="images/AiReadLogo.png" title="主页"></a>
+        <div class="nav-inner">
+            <div class="pure-menu pure-menu-open">
+                <ul>
+                    <li><a href="sourcelist.html" >源列表</a></li>
+                    <li><a href="sourcemanage.html">源管理</a></li>
+                    <li class="pure-menu-heading">Setting</li>
+                    <li><a href="javascript:" onclick="openStaticPopup(3)"><span class="email-label-personal"></span>添加</a></li>
+                    <li><a href="javascript:" onclick="openStaticPopup(4)"><span class="email-label-work"></span>设置</a></li>
+                    <li><a href="login.html"><span class="email-label-travel"></span>退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 源列表显示 -->
+    <div class="pure-u" id="sourcelist">
+        <div class="list-header">
+            <h2>源列表<em>（请选择你需要的源）</em></h2><hr>
+        </div>
+        <form name="get" action="#" method="post" >
+            <div class="popup-body">
+                <ul>
+                    <li><input type="radio" name="radio" checked="checked"/>网易新闻</li>
+                    <li><input type="radio" name="radio" />百度新闻</li>
+                    <li><input type="radio" name="radio" />雅虎新闻</li>
+                    <li><input type="radio" name="radio" />新浪新闻</li>
+                    <li><input type="radio" name="radio" />腾讯新闻</li>
+                    <li><input type="radio" name="radio" />Google</li>
+                    <li><input type="radio" name="radio" />百度新闻</li>
+                    <li><input type="radio" name="radio" />雅虎新闻</li>
+                    <li><input type="radio" name="radio" />新浪新闻</li>
+                    <li><input type="radio" name="radio" />腾讯新闻</li>
+                    <li><input type="radio" name="radio" />Google</li>
+                    <li><input type="radio" name="radio" />百度新闻</li>
+                    <li><input type="radio" name="radio" />雅虎新闻</li>
+                    <li><input type="radio" name="radio" />新浪新闻</li>
+                    <li><input type="radio" name="radio" />腾讯新闻</li>
+                    <li><input type="radio" name="radio" />Google</li>
+                    <li><input type="radio" name="radio" />百度新闻</li>
+                    <li><input type="radio" name="radio" />雅虎新闻</li>
+                    <li><input type="radio" name="radio" />新浪新闻</li>
+                    <li><input type="radio" name="radio" />腾讯新闻</li>
+                    <li><input type="radio" name="radio" />Google</li>
+                    <li><input type="radio" name="radio" />百度新闻</li>
+                    <li><input type="radio" name="radio" />雅虎新闻</li>
+                    <li><input type="radio" name="radio" />新浪新闻</li>
+                    <li><input type="radio" name="radio" />腾讯新闻</li>
+                    <li><input type="radio" name="radio" />Google</li>
+                    <li><input type="radio" name="radio" />百度新闻</li>
+                    <li><input type="radio" name="radio" />雅虎新闻</li>
+                    <li><input type="radio" name="radio" />新浪新闻</li>
+                    <li><input type="radio" name="radio" />腾讯新闻</li>
+                    <li><input type="radio" name="radio" />Google</li>
+                </ul>
+            </div>
+            <div class="popup-bottom">
+                <input type="button" class="pure-button primary-button" name="确定" value="确定">
+                <a href="index.html"><input type="button" class="pure-button primary-button" name="取消" value="取消"></a>
+            </div>
+        </form>
+    </div>
+    <!-- 隐藏功能区显示 -->
+    <div id="myHiddenDiv3">
+        <form name="get" action="#" method="post" >
+            <div class="popup">
+                <div class="popup-header">
+                    <h2>添加订阅<em>（请输入你要订阅的源地址）</em></h2>
+                    <hr>
+                </div>
+                <div class="popup-body">
+                    <p class="bookadd">订阅地址：<input type="text" name="text" placeholder="请输入订阅地址"/></p>
+                </div>
+                <div class="popup-bottom">
+                    <input type="button" class="pure-button primary-button" name="确定" value="确定">
+                    <a href="sourcelist.html"><input type="button" class="pure-button primary-button" name="取消" value="取消"></a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="myHiddenDiv4">
+        <form name="get" action="#" method="post" >
+            <div class="popup">
+                <div class="popup-header">
+                    <h2>设置<em>（设置你的喜好）</em></h2>
+                    <hr>
+                </div>
+                <div class="popup-body">
+                    <form class="pure-form pure-form-aligned">
+                        <table class="setting">
+                            <tr>
+                                <td><label for="name">用户名</label></td>
+                                <td><input id="name" type="text" placeholder="Username"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="email">邮箱</label></td>
+                                <td><input id="email" type="email" placeholder="Email Address"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div class="popup-bottom">
+                    <input type="button" class="pure-button primary-button" name="确定" value="确定">
+                    <a href="sourcelist.html"><input type="button" class="pure-button primary-button" name="取消" value="取消"></a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="js/ajf8ggy.js"></script>
+<script src="js/yui-min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/modernizr.custom.34978.js"></script>
+<script src="js/jquery.jmpopups-0.5.1.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
